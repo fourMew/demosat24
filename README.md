@@ -9,7 +9,7 @@ git clone https://github.com/fourMew/demosat24.git
 ```
 or by downloading and extracting the zip:
 
-![firefox_LX7X6LmUaZ](https://github.com/fourMew/demosat24/assets/19920164/cabca430-a0d7-482a-9c0f-249736fe5930)
+![firefox_V28YIlp0Gu](https://github.com/fourMew/demosat24/assets/19920164/bc803591-2bec-41a3-9846-162a37c0c774)
 
 
 ## Arduino
