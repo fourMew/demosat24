@@ -15,12 +15,24 @@
 DFRobot_OzoneSensor Ozone1;
 DFRobot_OzoneSensor Ozone2;
 
+int pressure;
+float pressureVolt;
+float psi;
+
+int temp1;
+float temp1Volt;
+float temp1C;
+float temp1F;
+
 void setup() {
   Serial.begin(9600);
-  
-  // is it practical to rewrite to report "Error on *address*"
-  while (!Ozone1.begin(OZONE1_ADDR) && !Ozone2.begin(OZONE2_ADDR)) {
-    Serial.println("I2c device number error!");
+
+  while (!Ozone1.begin(OZONE1_ADDR)) {
+    Serial.println("I2c device number error on 0x73");
+    delay(1000);
+  }
+  while (!Ozone2.begin(OZONE2_ADDR)) {
+    Serial.println("I2c device number error on 0x72");
     delay(1000);
   }
   Serial.println("I2c connect success !");
@@ -39,7 +51,20 @@ void loop() {
   /*   Smooth data collection
        COLLECT_NUMBER                    // The collection range is 1-100
   */
-  Serial.print("Ozone concentration: ");
+  temp1 = analogRead(A0);
+  temp1Volt = temp1*(5.0/1023);
+  temp1C = (temp1Volt - 0.5)/(0.01);
+  temp1F = (temp1C*(9.0/5.0) + 32);
+
+  pressure = analogRead(A3);
+  pressureVolt = pressure*(5.0/1023);
+  psi = (pressureVolt-0.5)*(15.0/4.0); 
+
+  Serial.print("Temp: ");
+  Serial.print(temp1F, 2);
+  Serial.print("F, PSI: ");
+  Serial.print(psi, 2);
+  Serial.print(" PSI, Ozone concentration: ");
   Serial.print(intO3);
   Serial.print(" PPB inside, ");
   Serial.print(extO3);
