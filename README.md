@@ -17,7 +17,7 @@ To use this sketch you must download and install the [DFRobot_OzoneSensor librar
 
 *How do I [install an arduino library](https://www.arduino.cc/en/Guide/Libraries#.UxU8mdzF9H0)?*
 
-From here you should be able to open the sketch with the Arduino IDE
+From here you should be able to open the sketch file demosat24/code/demosat/demosat.ino with the Arduino IDE
 
 This sketch currently supports:
 
@@ -26,6 +26,6 @@ This sketch currently supports:
  - 1 3.3v temp sensor via analog pin **A0**
 
 ## KiCAD
-Open the KiCAD project file found at demosat24/pcb/shield/demosatShield.kicad_pro
+With KiCAD, just open the project file demosat24/pcb/shield/demosatShield.kicad_pro
 
-Ensure that the symbols and footprints in the project specific library are properly loaded
+If you get errors or parts of the schematic are not showing up, ensure that the symbols and footprints in the project specific library are properly loaded
