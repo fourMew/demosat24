@@ -17,7 +17,17 @@ To use this sketch you must download and install the [DFRobot_OzoneSensor librar
 
 *How do I [install an arduino library](https://www.arduino.cc/en/Guide/Libraries#.UxU8mdzF9H0)?*
 
+<<<<<<< HEAD
 From here you should be able to open the sketch with the Arduino IDE as normal :)
+=======
+From here you should be able to open the sketch with the Arduino IDE
+
+This sketch currently supports:
+
+ - Dual O3 sensors via I2C Addresses **0x73** and **0x72**
+ - 1 SSCDANN150PGAA5 5v pressure sensor via analog pin **A3**
+ - 1 3.3v temp sensor via analog pin **A0**
+>>>>>>> aa75fdf (updated readme with sketch info)
 
 ## KiCAD
 Open the KiCAD project file found at demosat24/pcb/shield/demosatShield.kicad_pro
