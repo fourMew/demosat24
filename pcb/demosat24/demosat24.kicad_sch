@@ -4351,7 +4351,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 86.36) (xy 85.09 86.36)
+			(xy 96.52 86.36) (xy 86.36 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5120,6 +5120,17 @@
 		(uuid "23f0c933-49f0-4410-a8db-8b017f48dadc")
 	)
 	(label "A3"
+		(at 86.36 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2551e6c7-0174-4bca-828a-0643f0fee4e3")
+	)
+	(label "A3"
 		(at 21.59 67.31 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5173,6 +5184,17 @@
 			(justify left bottom)
 		)
 		(uuid "49585dba-cfa7-4813-841e-9d900d43ecf4")
+	)
+	(label "A0"
+		(at 190.5 34.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fd3f213-808b-439d-8625-b25c452f2f94")
 	)
 	(label "*10"
 		(at 74.93 44.45 180)
@@ -5240,17 +5262,6 @@
 		)
 		(uuid "8b2acec9-0924-4205-acc8-3f23f24b864a")
 	)
-	(label "A0"
-		(at 85.09 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "912ec253-53a8-445b-b6e0-89487a87fb4d")
-	)
 	(label "*11"
 		(at 74.93 41.91 180)
 		(fields_autoplaced yes)
@@ -5294,17 +5305,6 @@
 			(justify right bottom)
 		)
 		(uuid "ae2c9582-b445-44bd-b371-7fc74f6cf852")
-	)
-	(label "A3"
-		(at 190.5 34.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b498b141-41bf-4633-a411-b6356409df45")
 	)
 	(label "A0"
 		(at 21.59 59.69 0)
@@ -6249,7 +6249,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 250.19 36.83 0)
 			(effects
 				(font
